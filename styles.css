@@ -52,7 +52,7 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: red;
 }
 
 header {
@@ -65,16 +65,40 @@ header {
 header {
   line-height: 1.5;
 }
+
+.header-experience {
+  text-align: center;
+  background: url('images/tech-image.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+.header-experience {
+  line-height: 1.5;
+}
+
+.header-hobbies {
+  text-align: center;
+  background: url('images/hobby-background.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header.hobbies {
+  line-height: 1.5;
+}
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid blue;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.5) rotate(360deg);
+  border: 3px solid red;
 }
 .tag {
   background-color: #efefef;
@@ -85,21 +109,57 @@ header .profile-image:hover {
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: rgb(255, 255, 255);
+  color: rgb(2, 2, 2);
+  text-align: center;
 }
-.card {
+
+.card-background {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: left;
-  background: #fff;
+  max-height: fit-content;
+  text-align: center;
+  background: rgb(139, 157, 241);
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  align-content: center;
+}
+
+.card-goals {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: center;
+  background: rgb(139, 157, 241);
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
-  border-color: #ff99ff;
+
+.card-tinkering {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  max-height: fit-content;
+  text-align: center;
+  background: rgb(139, 157, 241);
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.card-background:hover {
+  border-color: green;
+}
+
+.card-goals:hover {
+  border-color: green;
+}
+
+.card-tinkering:hover {
+  border-color: green;
 }
 
 ul.skills {
@@ -110,14 +170,45 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
-  color: white;
+  background: #ffffff;
+  color: rgb(139, 157, 241);
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #ffffff;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.my-computer {
+  width: 175px;
+  height: 200px;
+  border-radius: 50%; 
+  align-content: center;
+  border: 3px solid white;
+  margin: 10px;
+}
+
+.my-computer:hover {
+  transform: scale(2.0)
+}
+
+.car {
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 10px;
+}
+
+.car:hover {
+  transform: scale(2.0);
 }
 
 footer {
