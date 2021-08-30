@@ -1,0 +1,121 @@
+body {
+    width: 100%;
+}
+
+.resume-grid {
+    border: 1px solid black;
+    margin-left:10px;
+    margin-right: 10px;
+    & h2 {
+        background-color: gray;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.personal-summary p {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-experience {
+    text-align: left;
+}
+
+.c2c {
+    grid-area: c2c;
+    border-top: none !important;
+}
+
+.sch {
+    grid-area: sch;
+}
+
+.rgis {
+    grid-area: rgis;
+}
+
+.swift {
+    grid-area: swift;
+}
+
+.schwab {
+    grid-area: schwab;
+}
+
+.job {
+    border: 1px solid black;
+    display: flex;
+}
+
+.inner-job {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.job h3, .iaes h2, .contact h2, .personal-summary h2  {
+    text-align: center;
+    color: blue;
+}
+
+.iaes-grid {
+    border: 1px solid black;
+    & .bulleted {
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+    & li {
+        margin-top: 10px;
+    }
+    }
+}
+
+.inner-job .ul-break {
+    display:block;
+}
+
+.ul-break {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bulleted {
+    list-style:disc;
+}
+
+.resume-download {
+    margin-bottom: 10px;
+    color: blue;
+}
+
+@media screen and (min-width: 768px) {
+    .work-experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "c2c c2c"
+                         "sch rgis"
+                         "swift schwab";
+    }
+
+    .iaes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+
+    .ul-break {
+        display: flex !important;
+        justify-content: space-around;
+    }
+
+    .margin-fix {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    nav .ul-break div{
+        display: flex;
+    }
+}
