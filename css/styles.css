@@ -633,6 +633,9 @@ body {
 .bulleted {
   list-style: disc; }
 
+.cert {
+  width: 100%; }
+
 .resume-download {
   margin-bottom: 10px;
   color: blue; }
@@ -657,6 +660,9 @@ body {
     margin-right: 10px; }
 
   nav .ul-break div {
-    display: flex; } }
+    display: flex; }
+
+  .cert {
+    width: 50%; } }
 
 /*# sourceMappingURL=styles.css.map */
