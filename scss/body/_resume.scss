@@ -55,9 +55,9 @@ body {
     margin-right: 10px;
 }
 
-.job h3, .iaes h2, .contact h2, .personal-summary h2  {
+.job h3, .iaes h2, .contact h2, .personal-summary h2, .work-experience-heading  {
     text-align: center;
-    color: blue;
+    color: blue !important;
 }
 
 .iaes-grid {
@@ -74,11 +74,6 @@ body {
 
 .inner-job .ul-break {
     display:block;
-}
-
-.ul-break {
-    display: flex;
-    justify-content: space-around;
 }
 
 .bulleted {
@@ -112,6 +107,13 @@ body {
     .ul-break {
         display: flex !important;
         justify-content: space-around;
+        & div:not(.margin-fix, .except) {
+            width: 128px;
+        }
+    }
+
+    .ul-skills {
+        margin: 15px !important;
     }
 
     .margin-fix {
