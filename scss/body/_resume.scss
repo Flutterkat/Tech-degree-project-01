@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+    width: 99%;
 }
 
 .resume-grid {
@@ -13,15 +13,35 @@ body {
     }
 }
 
+.resume-title {
+    margin-top: 50px;
+}
+
 .personal-summary p {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.resume-skills {
+    text-align: left !important;
 }
 
 .work-experience {
-    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "schwab"
+                            "swift"
+                            "rgis"
+                            "sch"
+                            "c2c";
 }
+
+.comp-date {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .c2c {
     grid-area: c2c;
@@ -45,7 +65,7 @@ body {
 }
 
 .job {
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     display: flex;
 }
 
@@ -56,20 +76,25 @@ body {
 }
 
 .job h3, .iaes h2, .contact h2, .personal-summary h2, .work-experience-heading  {
-    text-align: center;
+    text-align: left;
     color: blue !important;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
-.iaes-grid {
-    border: 1px solid black;
-    & .bulleted {
-    list-style-type: none;
-    padding: 0px;
-    text-align: center;
+.contact h2, .personal-summary h2, .work-experience-heading, .iaes h2 {
+    padding-left: 10px !important;
+}
+
+.iaes-grid .bulleted {
     & li {
         margin-top: 10px;
-    }
-    }
+    } 
+}
+
+.bulleted {
+    padding-left: 20px;
+    margin-left: 10px;
 }
 
 .inner-job .ul-break {
@@ -78,6 +103,9 @@ body {
 
 .bulleted {
     list-style:disc;
+    & li {
+        margin-bottom: 10px;
+    }
 }
 
 .cert {
@@ -89,20 +117,26 @@ body {
     color: blue;
 }
 
-@media screen and (min-width: 768px) {
-    .work-experience {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "c2c c2c"
-                         "sch rgis"
-                         "swift schwab";
-    }
+.contact div {
+    display: flex;
+    justify-content: space-around;
+}
 
-    .iaes {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        text-align: left;
-    }
+.contact p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.by-line p {
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+
 
     .ul-break {
         display: flex !important;
@@ -116,16 +150,14 @@ body {
         margin: 15px !important;
     }
 
-    .margin-fix {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
     nav .ul-break div{
         display: flex;
     }
 
     .cert {
+        display:flex;
+        margin-left: auto;
+        margin-right: auto;
         width: 50%;
     }
 }
