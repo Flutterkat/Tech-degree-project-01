@@ -324,7 +324,6 @@ a:hover {
 
 /* Section Styles */
 .main-nav {
-  width: 100%;
   background: black;
   min-height: 30px;
   padding: 10px;
@@ -494,13 +493,15 @@ ul.skills {
   transform: scale(2); }
 
 footer {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 0px; }
 
 .footer-links {
-  display: flex;
-  flex-direction: column; }
+  margin-left: auto;
+  margin-right: auto; }
   .footer-links a {
     margin-left: auto !important;
     margin-right: auto;
@@ -521,7 +522,6 @@ footer ul li {
 a.social {
   display: inline-block;
   text-indent: -9999px;
-  margin-left: 5px;
   margin-top: 10px;
   width: 30px;
   height: 30px;
@@ -575,10 +575,20 @@ a.social:hover {
 body {
   width: 99%; }
 
-.resume-grid {
-  border: 1px solid black;
-  margin-left: 10px;
+.resume-grid, .personal-summary p, .inner-job, .bulleted, .by-line p {
+  margin-left: 10px; }
+
+.resume-grid, .personal-summary p, .inner-job {
   margin-right: 10px; }
+
+.personal-summary p, .job h3, .iaes h2, .contact h2, .personal-summary h2, .work-experience-heading, .resume-skills {
+  text-align: left !important; }
+
+.comp-date, .job, .contact div {
+  display: flex; }
+
+.resume-grid {
+  border: 1px solid black; }
   .resume-grid h2 {
     background-color: gray;
     margin-left: auto;
@@ -587,21 +597,12 @@ body {
 .resume-title {
   margin-top: 50px; }
 
-.personal-summary p {
-  margin-left: 10px;
-  margin-right: 10px;
-  text-align: left; }
-
-.resume-skills {
-  text-align: left !important; }
-
 .work-experience {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "schwab" "swift" "rgis" "sch" "c2c"; }
 
 .comp-date {
-  display: flex;
   justify-content: space-between; }
 
 .c2c {
@@ -621,61 +622,45 @@ body {
   grid-area: schwab; }
 
 .job {
-  border-bottom: 1px solid black;
-  display: flex; }
+  border-bottom: 1px solid black; }
 
-.inner-job {
-  width: 100%;
-  margin-left: 10px;
-  margin-right: 10px; }
+.inner-job, .cert, .main-nav, footer {
+  width: 100%; }
 
-.job h3, .iaes h2, .contact h2, .personal-summary h2, .work-experience-heading {
-  text-align: left;
-  color: blue !important;
-  margin-bottom: 5px;
-  margin-top: 5px; }
+.job h3, .iaes h2, .contact h2, .personal-summary h2, .work-experience-heading, .resume-download {
+  color: blue !important; }
 
 .contact h2, .personal-summary h2, .work-experience-heading, .iaes h2 {
   padding-left: 10px !important; }
 
-.iaes-grid .bulleted li {
+.iaes-grid .bulleted li, .resume-download {
   margin-top: 10px; }
 
 .bulleted {
-  padding-left: 20px;
-  margin-left: 10px; }
+  padding-left: 20px; }
 
 .inner-job .ul-break {
   display: block; }
 
 .bulleted {
   list-style: disc; }
-  .bulleted li {
-    margin-bottom: 10px; }
 
-.cert {
-  width: 100%; }
-
-.resume-download {
-  margin-bottom: 10px;
-  color: blue; }
+.resume-download, .bulleted li {
+  margin-bottom: 10px; }
 
 .contact div {
-  display: flex;
   justify-content: space-around; }
 
-.contact p {
+.contact p, .job h3, .iaes h2, .contact h2, .personal-summary h2, .work-experience-heading {
   margin-top: 5px;
   margin-bottom: 5px; }
 
 .by-line p {
-  margin-left: 10px;
   margin-top: 0px;
   margin-bottom: 0px; }
 
 @media screen and (min-width: 768px) {
   .ul-break {
-    display: flex !important;
     justify-content: space-around; }
     .ul-break div:not(.margin-fix, .except) {
       width: 128px; }
@@ -683,11 +668,10 @@ body {
   .ul-skills {
     margin: 15px !important; }
 
-  nav .ul-break div {
-    display: flex; }
+  nav .ul-break div, .ul-break, .cert {
+    display: flex !important; }
 
   .cert {
-    display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 50%; } }
