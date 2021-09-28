@@ -575,7 +575,7 @@ a.social:hover {
 body {
   width: 99%; }
 
-.resume-grid, .personal-summary p, .inner-job, .bulleted, .by-line p {
+.resume-grid, .personal-summary p, .inner-job, .bulleted, .by-line p, .contact div p {
   margin-left: 10px; }
 
 .resume-grid, .personal-summary p, .inner-job {
@@ -584,8 +584,11 @@ body {
 .personal-summary p, .job h3, .iaes h2, .contact h2, .personal-summary h2, .work-experience-heading, .resume-skills {
   text-align: left !important; }
 
-.comp-date, .job, .contact div {
+.comp-date, .job {
   display: flex; }
+
+.contact div {
+  display: block; }
 
 .resume-grid {
   border: 1px solid black; }
@@ -660,6 +663,10 @@ body {
   margin-bottom: 0px; }
 
 @media screen and (min-width: 768px) {
+  .contact div {
+    display: flex;
+    margin-right: 0px; }
+
   .ul-break {
     justify-content: space-around; }
     .ul-break div:not(.margin-fix, .except) {
