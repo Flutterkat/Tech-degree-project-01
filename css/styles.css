@@ -670,7 +670,7 @@ body {
   .ul-break {
     justify-content: space-around; }
     .ul-break div:not(.margin-fix, .except) {
-      width: 128px; }
+      width: 200px; }
 
   .ul-skills {
     margin: 15px !important; }
