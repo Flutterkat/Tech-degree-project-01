@@ -627,7 +627,7 @@ body {
 .job {
   border-bottom: 1px solid black; }
 
-.inner-job, .cert, .main-nav, footer {
+.inner-job, .cert, .IBMcert, .main-nav, footer {
   width: 100%; }
 
 .job h3, .iaes h2, .contact h2, .personal-summary h2, .work-experience-heading, .resume-download {
@@ -670,17 +670,27 @@ body {
   .ul-break {
     justify-content: space-around; }
     .ul-break div:not(.margin-fix, .except) {
-      width: 200px; }
+      width: 320px; }
 
   .ul-skills {
-    margin: 15px !important; }
+    margin: 15px !important;
+    list-style-type: none; }
 
-  nav .ul-break div, .ul-break, .cert {
+  nav .ul-break div, .ul-break {
     display: flex !important; }
 
-  .cert {
+  .center-text {
+    text-align: center; }
+
+  .flex {
     margin-left: auto;
     margin-right: auto;
-    width: 50%; } }
+    display: flex;
+    flex-direction: row; }
+
+  .cert {
+    margin: 3px;
+    height: 400px;
+    width: 500px; } }
 
 /*# sourceMappingURL=styles.css.map */
