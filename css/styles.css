@@ -575,7 +575,7 @@ a.social:hover {
 body {
   width: 99%; }
 
-.resume-grid, .personal-summary p, .inner-job, .bulleted, .by-line p, .contact div p {
+.resume-grid, .personal-summary p, .inner-job, .bulleted, .by-line p {
   margin-left: 10px; }
 
 .resume-grid, .personal-summary p, .inner-job {
