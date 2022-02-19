@@ -88,7 +88,7 @@ body {
 }
 
 .iaes-grid .bulleted li, .resume-download{
-        margin-top: 10px;
+    margin-top: 10px;
 }
 
 .bulleted {
@@ -119,6 +119,10 @@ body {
 .by-line p {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.cert {
+    margin: 5px;
 }
 
 
@@ -158,7 +162,7 @@ body {
 
     .cert {
         margin: 3px;
-        height: 400px;
-        width: 500px;
+        width: 200px;
+        height: 200px;
     }
 }

@@ -662,6 +662,9 @@ body {
   margin-top: 0px;
   margin-bottom: 0px; }
 
+.cert {
+  margin: 5px; }
+
 @media screen and (min-width: 768px) {
   .contact div {
     display: flex;
@@ -690,7 +693,7 @@ body {
 
   .cert {
     margin: 3px;
-    height: 400px;
-    width: 500px; } }
+    width: 200px;
+    height: 200px; } }
 
 /*# sourceMappingURL=styles.css.map */
