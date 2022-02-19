@@ -1,5 +1,5 @@
 body {
-    width: 99%;
+    width: fit-content;
 }
 
 .resume-grid, .personal-summary p, .inner-job, .bulleted, .by-line p {
@@ -75,8 +75,12 @@ body {
     border-bottom: 1px solid black;
 }
 
-.inner-job, .cert, .IBMcert, .main-nav, footer {
+.inner-job, .main-nav, footer {
     width: 100%;
+}
+
+footer p {
+    text-align: center;
 }
 
 .job h3, .iaes h2, .contact h2, .personal-summary h2, .work-experience-heading, .resume-download  {
@@ -126,7 +130,7 @@ body {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
 
     .contact div {
         display: flex;
@@ -135,9 +139,6 @@ body {
 
     .ul-break {
         justify-content: space-around;
-        & div:not(.margin-fix, .except) {
-            width: 320px;
-        }
     }
 
     .ul-skills {

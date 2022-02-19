@@ -573,7 +573,7 @@ a.social:hover {
     max-width: 1200px;
     margin: 40px auto; } }
 body {
-  width: 99%; }
+  width: fit-content; }
 
 .resume-grid, .personal-summary p, .inner-job, .bulleted, .by-line p {
   margin-left: 10px; }
@@ -627,8 +627,11 @@ body {
 .job {
   border-bottom: 1px solid black; }
 
-.inner-job, .cert, .IBMcert, .main-nav, footer {
+.inner-job, .main-nav, footer {
   width: 100%; }
+
+footer p {
+  text-align: center; }
 
 .job h3, .iaes h2, .contact h2, .personal-summary h2, .work-experience-heading, .resume-download {
   color: blue !important; }
@@ -665,15 +668,13 @@ body {
 .cert {
   margin: 5px; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   .contact div {
     display: flex;
     margin-right: 0px; }
 
   .ul-break {
     justify-content: space-around; }
-    .ul-break div:not(.margin-fix, .except) {
-      width: 320px; }
 
   .ul-skills {
     margin: 15px !important;
